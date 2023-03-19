@@ -1,0 +1,82 @@
+
+body {
+  background: #404040;
+  padding: 1.5rem 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  width: 144rem;
+  Height: 102.4rem;
+  background-image: url(images/fundo.svg);
+  margin: auto;
+}
+
+main {
+  padding: 23rem 16.7rem 18.7rem 16.7rem;
+  display: grid;
+  grid-template-areas: 
+          "A B C D"
+          "A B C D"
+          "A B C D";
+  grid-gap: 4.5rem;
+}
+
+.hole{
+  position: relative;
+}
+
+
+.hole .animation {
+  position: absolute;
+  width: 22.3rem;
+  height: 100%;
+  top: 0rem;
+}
+
+
+
+.animation:hover {
+  animation-name: toop;
+  animation-duration: 800ms;
+}
+  
+
+
+
+@keyframes toop {
+  0% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira5.svg);  
+  }
+
+  20% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira2.svg);
+  } 
+
+  40% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira3.svg); 
+  }
+
+  60% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira3.svg);
+  }
+
+  80% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira2.svg);
+  }
+
+  100% {
+    transform: translateY(0%);
+    background-image: url(images/toupeira5.svg);
+  }
+}
+
+
